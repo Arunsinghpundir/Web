@@ -1,0 +1,58 @@
+:root {
+  --bg-color-o: rgba(0, 0, 0, 0.918);
+  --light-color: rgba(255, 255, 255, 0.8);
+  --white: #fff;
+  --hover: rebeccapurple;
+}
+
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+body {
+  background-image: url(https://media.istockphoto.com/vectors/tic-tac-toe-school-game-colorful-seamless-pattern-for-fabric-and-on-vector-id1292919739?k=20&m=1292919739&s=612x612&w=0&h=3tcAnbVokO9kdKAa3xVqanBdSaMIMGjOH-lLG17iGm4=);
+  margin: 0 auto;
+}
+.text {
+  text-align: center;
+  font-size: larger;
+  padding-top: 100px;
+  color: var(--light-color);
+  height: 50px;
+  background-color: var(--bg-color-o);
+}
+.container {
+  display: grid;
+  background-color: var(--bg-color-o);
+  grid-template-columns: auto auto auto;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+}
+.item {
+  background-color: var(--light-color);
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  background-color: var(--white);
+  opacity: 0.7;
+  transition: 0.8s;
+}
+.item:hover {
+  background-color: var(--hover);
+}
+.one {
+  border-radius: 15px 0 0 0;
+}
+.three {
+  border-radius: 0 15px 0 0;
+}
+
+.seven {
+  border-radius: 0 0 0 15px;
+}
+
+.nine {
+  border-radius: 0 0 15px 0;
+}
