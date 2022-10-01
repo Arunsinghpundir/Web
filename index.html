@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="text"><h1>TIC TAC TOE</h1></div>
-    <div class="container">
-      <div class="item one"></div>
-      <div class="item"></div>
-      <div class="item three"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item seven"></div>
-      <div class="item"></div>
-      <div class="item nine"></div>
+    <div class="wrapper">
+      <h1 class="title">TIC TAC TOE</h1>
+      <div class="container">
+        <div data-cell-index="0" class="cell"></div>
+        <div data-cell-index="1" class="cell"></div>
+        <div data-cell-index="2" class="cell"></div>
+        <div data-cell-index="3" class="cell"></div>
+        <div data-cell-index="4" class="cell"></div>
+        <div data-cell-index="5" class="cell"></div>
+        <div data-cell-index="6" class="cell"></div>
+        <div data-cell-index="7" class="cell"></div>
+        <div data-cell-index="8" class="cell"></div>
+      </div>
+      <h2 class="status" id="status"></h2>
+      <button class="restart">Restart</button>
     </div>
   </body>
 </html>

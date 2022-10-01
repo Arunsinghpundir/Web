@@ -4,55 +4,54 @@
   --white: #fff;
   --hover: rebeccapurple;
 }
-
 * {
   box-sizing: border-box;
   margin-top: 0;
 }
 body {
-  background-image: url(https://media.istockphoto.com/vectors/tic-tac-toe-school-game-colorful-seamless-pattern-for-fabric-and-on-vector-id1292919739?k=20&m=1292919739&s=612x612&w=0&h=3tcAnbVokO9kdKAa3xVqanBdSaMIMGjOH-lLG17iGm4=);
-  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  overflow: hidden;
 }
-.text {
+.wrapper {
+  display: grid;
+  place-items: center;
   text-align: center;
-  font-size: larger;
-  padding-top: 100px;
-  color: var(--light-color);
-  height: 50px;
-  background-color: var(--bg-color-o);
+}
+.title {
+  font-size: 70px;
+  margin: 20px auto 30px auto;
+  color: white;
 }
 .container {
   display: grid;
+  grid-template-columns: repeat(3, auto);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.cell {
+  width: 150px;
+  height: 150px;
   background-color: var(--bg-color-o);
-  grid-template-columns: auto auto auto;
-  height: 100vh;
-  align-content: center;
-  justify-content: center;
-}
-.item {
-  background-color: var(--light-color);
-  border: 2px solid black;
-  height: 100px;
-  width: 100px;
+  border: 1px solid #c779d0;
   cursor: pointer;
-  background-color: var(--white);
-  opacity: 0.7;
-  transition: 0.8s;
+  line-height: 150px;
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
 }
-.item:hover {
-  background-color: var(--hover);
+.status {
+  font-size: 70px;
+  color: white;
+  margin: 40px auto 20px auto;
 }
-.one {
-  border-radius: 15px 0 0 0;
-}
-.three {
-  border-radius: 0 15px 0 0;
-}
-
-.seven {
-  border-radius: 0 0 0 15px;
-}
-
-.nine {
-  border-radius: 0 0 15px 0;
+.restart {
+  padding: 10px;
+  font-size: 45px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
