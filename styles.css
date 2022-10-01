@@ -22,6 +22,7 @@ body {
   font-size: 70px;
   margin: 20px auto 30px auto;
   color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .container {
   display: grid;
@@ -29,10 +30,11 @@ body {
   color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 10px;
 }
 .cell {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   background-color: var(--bg-color-o);
   border: 1px solid #c779d0;
   cursor: pointer;
@@ -54,4 +56,32 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 66px;
+  box-shadow: white 0px 0px 30px 1px;
+}
+img:hover {
+  transform: rotate(360deg);
+  transition: ease-in-out 1.5s;
+  box-shadow: rgb(180, 255, 243) 0px 0px 40px 3px;
+  filter: var(--hover);
+}
+.cell:hover {
+  background-color: var(--hover);
+  transition: ease-in 0.5s;
+}
+.one {
+  border-radius: 10px 0 0 0;
+}
+.three {
+  border-radius: 0 10px 0 0;
+}
+.seven {
+  border-radius: 0 0 0 10px;
+}
+.nine {
+  border-radius: 0 0 10px 0;
 }
