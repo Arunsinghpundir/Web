@@ -34,7 +34,7 @@ document.querySelector("restart").addEventListener("click", RestartGame);
 function cellClick(clickEvent) {
   const clickCell = clickEvent.target;
   const clickIndexVal = parseInt(clickCell.getAttribute("data-cell-index"));
-  console.log(clickIndexVal);
+  statusDisplay.innerHTML=clickIndexVal;
   if (gameState[clickIndexVal] !== "" || !gameActive) {
     return;
   }
